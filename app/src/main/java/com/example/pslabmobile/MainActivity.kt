@@ -50,12 +50,15 @@ class MainActivity : AppCompatActivity() {
             }
 
             webView.webViewClient = object : WebViewClient() {
-                override fun shouldInterceptRequest(view: WebView?, url: String?): WebResourceResponse? {
-                    return super.shouldInterceptRequest(view, url)
+                override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {
+                    view?.loadUrl(url)
+                    return true
+
                 }
             }
 
-            webView.loadUrl("https://google.com");
+
+            webView.loadUrl("https://ps-lab-hackathon.web.app/customer");
             connectAPI();
         }
     }
