@@ -3,6 +3,53 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="vertical"
         android:layout_width="match_parent"
+        android:layout_margin="16dp"
         android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="30dp"
+            android:text="E-Bidding Marketplace"/>
+
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatImageView
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="150dp"
+                android:layout_height="150dp" android:background="@mipmap/ic_launcher"/>
+
+    </FrameLayout>
+
+
+
+
+
+    <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/usernameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="username"
+            android:layout_marginTop="16dp"
+
+            />
+
+    <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/passwordText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:layout_marginTop="16dp"
+
+    />
+
+    <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:text="Sign In"
+            android:layout_height="wrap_content"/>
 
 </android.support.v7.widget.LinearLayoutCompat>
